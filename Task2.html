@@ -97,18 +97,19 @@
         .image-matrix {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 0px;
+            padding: 25px;
         }
 
         .image-matrix img {
             width: 53px;
             height: 50px;
             object-fit: cover;
-            border: 2px solid transparent;
         }
 
         .image-matrix .selected {
-            border-color: red;
+            border: 3px solid red;
+
         }
     </style>
 
@@ -130,20 +131,23 @@
             </div>
 
             <div class="row ">
-                <p id="locationText">
-                    <span id="locationTexttip"></span><br />
+                <p id="locationText"><span id="locationTexttip"></span><br />
                     Your image selection will be shown here ..
                 </p>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  
                     <div id="imageContainer"></div>
 
                 </div>
 
                 <div class="col-md-6">
+                    
                     <!-- Image matrix -->
-                  <div id="locationText">
-                      <div id="imageMatrix" class="image-matrix"></div>
-                  </dic>
+                    <div id="locationText">
+                        <span id="imageMaptip"></span>
+                        <p>Image Navigation Map </p>
+                        <div id="imageMatrix" class="image-matrix"></div>
+                    </div>
 
                 </div>
                 <div class="col-md-4">
